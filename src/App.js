@@ -1,25 +1,37 @@
 import logo from './logo.svg';
 import './App.css';
+import Contador from './components/Contador';
+import { useState } from 'react';
 
 function App() {
+  const [valor, setValor] = useState(0);
+
+  //incrementar el valor
+  const incrementarHandler = () =>{
+    setValor(valor + 1);
+    console.log("incrementarValor");
+  }
+  //decrementar el valor
+  const decrementarHandler = () =>{
+    setValor(valor -1);
+    console.log("decrementarValor");
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Contador valor={valor}/>
+      <div>
+        <button className='btn btn-primary tamanio' onClick={incrementarHandler}>+</button>
+        <button className='btn btn-danger tamanio' onClick={ () => setValor(0)}>Clear</button>
+        <button className='btn btn-primary tamanio' onClick={decrementarHandler}>-</button>
+      </div>
     </div>
   );
 }
 
 export default App;
+
+/*
+
+
+*/
