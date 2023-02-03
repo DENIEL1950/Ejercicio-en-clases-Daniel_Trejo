@@ -2,8 +2,39 @@
   text-align: center;
 }
 
-.tamanio{
-  width: 80px;
-  height: 80px;
-  background-color: brown;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+button {
+  border: radius 5rem;;
+  width:100px;
+  height:70px;
+  color:rgb(255, 191, 0);
+  background: #03018194;
+  font-size: 1.3rem;
+  position:relative;
+  cursor:pointer;
+  border:5px solid #5978F3;
+  line-height:1em;
+  letter-spacing:0.075em;
+  padding: inherit;
+  border-collapse: separate;
+}
+
+body {
+  background-image:url(https://img.freepik.com/foto-gratis/paisaje-niebla-matutina-montanas-globos-aerostaticos-al-amanecer_335224-794.jpg?w=2000);
+
 }

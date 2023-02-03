@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Contador from './components/Contador';
 import { useState } from 'react';
